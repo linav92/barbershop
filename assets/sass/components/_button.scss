@@ -1,0 +1,31 @@
+.post__button {
+    
+    background: $nickel;
+    color: $white;
+    border-radius: 50px;
+    padding: 0.75rem 1rem;
+
+    &--small {
+        margin-right: 0.75rem;
+        @include large-breakpoint{
+            margin-right: 0.25rem;
+        }
+    }
+
+    &--hover:hover {
+        background: $light-gray;
+        color: $white;
+        font-weight: $font-regular;
+    }
+
+    &--focus:focus {
+        background: $nickel;
+        box-shadow: 0 0 0 0.25rem $light-gray;
+    }
+
+    &--active {
+        color: $white;
+        background: $eerie-black;
+        box-shadow: 0 0 0 0.25rem $light-gray;
+    }
+}

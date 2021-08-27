@@ -1,0 +1,27 @@
+.navbar {
+    background: $eerie-black ;
+    padding: 1.5rem 0;
+    @include large-breakpoint{
+        padding: 1.5rem;
+    }
+
+    &__logo {
+        width: 4.7rem;
+    }
+    &__toggler {
+        border:none;
+    }
+    ul {
+        margin-left: auto;
+    }
+}
+
+.navbar .navbar__list .navbar__link {
+    color: $white;
+    margin-right: 0.5rem;
+
+    &--active {
+        color: $spanish-pink;
+    }
+}
+
